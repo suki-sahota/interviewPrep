@@ -1,8 +1,4 @@
-# sockMerchant
-HackerRank interview practice
+# Interview Prep
+HackerRank and LeetCode interview practice
 
-John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
-
-For example, there are n = 7 socks with colors ar = [1,2,1,2,1,3,2]. There is one pair of color 1 and one of color 2. There are three odd socks left, one of each color. The number of pairs is 2.
-
-
+These problems are fundamental to every software engineering, data engineering, data science, or security engineering interview. They mainly test critical thinking and problem solving abilities. A secondary goal from these interviews is to access a candidate's coding abilities.
