@@ -70,14 +70,18 @@ private:
     vector<int> smallestEditDistance(int n, int T, vector<vector<int>> &graph,
                                      vector<vector<int>> &OPT)
     {
-        vector<int> res(T, INT_MAX);
+        vector<int> res(T);
 
         // Finds starting location with smallest overall edit distance
         res[0] = distance(OPT[0].begin(), min_element(OPT[0].begin(), OPT[0].end()));
 
         for (int t = 1; t < T; ++t) {
-            for (int neighbor : graph[res[0]]) {
-                res[t] = min(res[t], OPT[t][neighbor]);
+            int min_dist = INT_MAX;
+            for (int neighbor : graph[res[t - 1]]) {
+                if (OPT[t][neighbor] < min_dist) {
+                    min_dist = OPT[t][neighbor];
+                    res[t] = neighbor;
+                }
             }
         }
 
