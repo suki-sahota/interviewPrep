@@ -1,3 +1,6 @@
+/**
+ * Author: Suki Sahota
+ */
 #include <string>
 #include <vector>
 
